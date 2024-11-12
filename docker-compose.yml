@@ -1,0 +1,8 @@
+services:
+    ws-server:
+        build:
+            context: ./
+        ports: 
+            - 5002:80
+        volumes:
+            - ./code:/usr/share/nginx/html
